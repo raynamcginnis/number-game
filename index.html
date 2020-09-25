@@ -3,9 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <title>Number Match Game</title>
 </head>
 <body>
-    
+    <div id="white">
+        <div>
+        
+            <h3>Welcome To The Number Match Game!</h3>
+            <p><em>The rules are simple.</em></p>
+            <ol>
+            <li>A random image and number will be generated.</li>
+            <li>If the number on the screen matches the number of items in the image, hit the thumbs up button.</li>
+            <li>If the number on the screen does not match the number of items in the image, hit the thumbs down button.</li>
+            <li>You'll have <span id="time setting">4</span>> seconds to decide.</li>
+            </ol>
+        </div>
+        <button id="play-button">
+        <strong>Play!</strong>
+        </button>
+        <h3 id="message">Game over, your score was 15/20</h3>
+        <div id="game-area">
+            <h3 id="score">Score: <span id="currentScore">4</span>/<span id="totalPoints">20</span></h3>
+            <img>
+            <p>How many <span id="itemName">macaroons</span></p>
+            <div class="match-button">
+                <button>&#x1f44d</button>
+                <p id="number">6</p>
+                <button>&#x1f44e</button>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
