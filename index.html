@@ -8,7 +8,7 @@
 </head>
 <body>
     <div id="white">
-        <div>
+        <div id="welcome">
         
             <h3>Welcome To The Number Match Game!</h3>
             <p><em>The rules are simple.</em></p>
@@ -16,21 +16,21 @@
             <li>A random image and number will be generated.</li>
             <li>If the number on the screen matches the number of items in the image, hit the thumbs up button.</li>
             <li>If the number on the screen does not match the number of items in the image, hit the thumbs down button.</li>
-            <li>You'll have <span id="time setting">4</span>> seconds to decide.</li>
+            <li>You'll have <span id="time-setting"></span> seconds to decide.</li>
             </ol>
         </div>
-        <button id="play-button" onclick="loop()">
+        <button id="play-button" onclick="play()">
         <strong>Play!</strong>
         </button>
-        <h3 id="message">Game over, your score was 15/20</h3>
+        <h3 id="message"></h3>
         <div id="game-area">
-            <h3 id="score">Score: <span id="currentScore">4</span>/<span id="totalPoints">20</span></h3>
+            <h3 id="score">Score: <span id="currentScore"></span>/<span id="totalPoints"></span></h3>
             <img>
-            <p>How many <span id="itemName">macaroons</span></p>
+            <p>How many <span id="itemName"></span>?</p>
             <div class="match-button">
-                <button>&#x1f44d</button>
-                <p id="number">6</p>
-                <button>&#x1f44e</button>
+                <button onclick="match()">&#x1f44d</button>
+                <p id="number"></p>
+                <button onclick="noMatch()">&#x1f44e</button>
             </div>
         </div>
     </div>
